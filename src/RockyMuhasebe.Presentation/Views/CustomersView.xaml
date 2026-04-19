@@ -1,0 +1,42 @@
+<UserControl x:Class="RockyMuhasebe.Presentation.Views.CustomersView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{StaticResource BackgroundBrush}">
+    <DockPanel Margin="20">
+        <Border DockPanel.Dock="Top" Style="{StaticResource CardPanel}" Padding="15,10" Margin="8,0,8,10">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="➕ Yeni Müşteri" Style="{StaticResource PrimaryButton}" Padding="16,8"/>
+                <Button Content="➕ Yeni Tedarikçi" Style="{StaticResource SuccessButton}" Padding="16,8"/>
+                <Button Content="✏️ Düzenle" Style="{StaticResource SecondaryButton}" Padding="16,8"/>
+                <Button Content="🗑️ Sil" Style="{StaticResource DangerButton}" Padding="16,8"/>
+                <Border Width="1" Background="{StaticResource BorderBrush}" Margin="10,4"/>
+                <Button Content="📊 Ekstre" Style="{StaticResource SecondaryButton}" Padding="16,8"/>
+                <Button Content="📤 Excel" Style="{StaticResource SecondaryButton}" Padding="16,8"/>
+            </StackPanel>
+        </Border>
+        <Border Style="{StaticResource CardPanel}" Margin="8,0">
+            <DataGrid ItemsSource="{Binding Customers}" 
+                      Style="{StaticResource ModernDataGrid}"
+                      ColumnHeaderStyle="{StaticResource ModernDataGridColumnHeader}"
+                      RowStyle="{StaticResource ModernDataGridRow}"
+                      CellStyle="{StaticResource ModernDataGridCell}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Cari Kodu" Binding="{Binding Code}" Width="130">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock"><Setter Property="FontWeight" Value="Bold"/><Setter Property="Foreground" Value="{StaticResource AccentBrush}"/></Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Cari Unvanı" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Türü" Binding="{Binding Type}" Width="100"/>
+                    <DataGridTextColumn Header="Telefon" Binding="{Binding Phone}" Width="140"/>
+                    <DataGridTextColumn Header="Bakiye" Binding="{Binding Balance}" Width="150">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock"><Setter Property="HorizontalAlignment" Value="Right"/><Setter Property="FontWeight" Value="Bold"/></Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Durum" Binding="{Binding Status}" Width="90"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </DockPanel>
+</UserControl>

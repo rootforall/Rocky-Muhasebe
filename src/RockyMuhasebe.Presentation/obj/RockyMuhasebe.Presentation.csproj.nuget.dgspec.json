@@ -1,0 +1,467 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Presentation\\RockyMuhasebe.Presentation.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\RockyMuhasebe.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\RockyMuhasebe.Application.csproj",
+        "projectName": "RockyMuhasebe.Application",
+        "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\RockyMuhasebe.Application.csproj",
+        "packagesPath": "C:\\Users\\tasgu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tasgu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\RockyMuhasebe.Data.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\RockyMuhasebe.Data.csproj"
+              },
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\RockyMuhasebe.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\RockyMuhasebe.Data.csproj",
+        "projectName": "RockyMuhasebe.Data",
+        "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\RockyMuhasebe.Data.csproj",
+        "packagesPath": "C:\\Users\\tasgu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tasgu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj",
+        "projectName": "RockyMuhasebe.Domain",
+        "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj",
+        "packagesPath": "C:\\Users\\tasgu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tasgu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Infrastructure\\RockyMuhasebe.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Infrastructure\\RockyMuhasebe.Infrastructure.csproj",
+        "projectName": "RockyMuhasebe.Infrastructure",
+        "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Infrastructure\\RockyMuhasebe.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\tasgu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tasgu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[10.0.6, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Integration\\RockyMuhasebe.Integration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Integration\\RockyMuhasebe.Integration.csproj",
+        "projectName": "RockyMuhasebe.Integration",
+        "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Integration\\RockyMuhasebe.Integration.csproj",
+        "packagesPath": "C:\\Users\\tasgu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Integration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tasgu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\RockyMuhasebe.Application.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\RockyMuhasebe.Application.csproj"
+              },
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Presentation\\RockyMuhasebe.Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Presentation\\RockyMuhasebe.Presentation.csproj",
+        "projectName": "RockyMuhasebe.Presentation",
+        "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Presentation\\RockyMuhasebe.Presentation.csproj",
+        "packagesPath": "C:\\Users\\tasgu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tasgu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\RockyMuhasebe.Application.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Application\\RockyMuhasebe.Application.csproj"
+              },
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\RockyMuhasebe.Data.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Data\\RockyMuhasebe.Data.csproj"
+              },
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Domain\\RockyMuhasebe.Domain.csproj"
+              },
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Infrastructure\\RockyMuhasebe.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Infrastructure\\RockyMuhasebe.Infrastructure.csproj"
+              },
+              "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Integration\\RockyMuhasebe.Integration.csproj": {
+                "projectPath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Integration\\RockyMuhasebe.Integration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

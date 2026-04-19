@@ -1,0 +1,11 @@
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\bin\Debug\net8.0\RockyMuhasebe.Domain.deps.json
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\bin\Debug\net8.0\RockyMuhasebe.Domain.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\bin\Debug\net8.0\RockyMuhasebe.Domain.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\RockyMuhasebe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\RockyMuhasebe.Domain.AssemblyInfoInputs.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\RockyMuhasebe.Domain.AssemblyInfo.cs
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\RockyMuhasebe.Domain.csproj.CoreCompileInputs.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\RockyMuhasebe.Domain.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\refint\RockyMuhasebe.Domain.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\RockyMuhasebe.Domain.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Domain\obj\Debug\net8.0\ref\RockyMuhasebe.Domain.dll

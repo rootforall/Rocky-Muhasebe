@@ -1,0 +1,15 @@
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\bin\Debug\net8.0\RockyMuhasebe.Infrastructure.deps.json
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\bin\Debug\net8.0\RockyMuhasebe.Infrastructure.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\bin\Debug\net8.0\RockyMuhasebe.Infrastructure.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\bin\Debug\net8.0\RockyMuhasebe.Domain.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\bin\Debug\net8.0\RockyMuhasebe.Domain.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuhasebe.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuhasebe.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuhasebe.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuhasebe.Infrastructure.AssemblyInfo.cs
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuhasebe.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuh.EA8B8E89.Up2Date
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuhasebe.Infrastructure.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\refint\RockyMuhasebe.Infrastructure.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\RockyMuhasebe.Infrastructure.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Infrastructure\obj\Debug\net8.0\ref\RockyMuhasebe.Infrastructure.dll

@@ -1,0 +1,17 @@
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\bin\Debug\net8.0\RockyMuhasebe.Application.deps.json
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\bin\Debug\net8.0\RockyMuhasebe.Application.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\bin\Debug\net8.0\RockyMuhasebe.Application.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\bin\Debug\net8.0\RockyMuhasebe.Data.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\bin\Debug\net8.0\RockyMuhasebe.Domain.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\bin\Debug\net8.0\RockyMuhasebe.Domain.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\bin\Debug\net8.0\RockyMuhasebe.Data.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuhasebe.Application.csproj.AssemblyReference.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuhasebe.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuhasebe.Application.AssemblyInfoInputs.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuhasebe.Application.AssemblyInfo.cs
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuhasebe.Application.csproj.CoreCompileInputs.cache
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuh.F48E1EC8.Up2Date
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuhasebe.Application.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\refint\RockyMuhasebe.Application.dll
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\RockyMuhasebe.Application.pdb
+C:\Users\tasgu\Desktop\Rocky Muhasebe\src\RockyMuhasebe.Application\obj\Debug\net8.0\ref\RockyMuhasebe.Application.dll

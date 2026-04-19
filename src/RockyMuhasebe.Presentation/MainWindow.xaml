@@ -1,0 +1,282 @@
+<Window x:Class="RockyMuhasebe.Presentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:RockyMuhasebe.Presentation.ViewModels"
+        xmlns:views="clr-namespace:RockyMuhasebe.Presentation.Views"
+        Title="Rocky Muhasebe — Profesyonel Muhasebe Yazılımı"
+        Width="1400" Height="900"
+        MinWidth="1200" MinHeight="700"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Background="{StaticResource BackgroundBrush}">
+
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <!-- View ↔ ViewModel Eşlemeleri -->
+        <DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+            <views:DashboardView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:ChartOfAccountsViewModel}">
+            <views:ChartOfAccountsView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:JournalEntryViewModel}">
+            <views:JournalEntryView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:CustomersViewModel}">
+            <views:CustomersView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:InvoicesViewModel}">
+            <views:InvoicesView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:ProductsViewModel}">
+            <views:ProductsView/>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ========== SOL SIDEBAR ========== -->
+        <Border Grid.Column="0" Background="{StaticResource SidebarGradient}">
+            <DockPanel>
+                <!-- Logo Alanı -->
+                <Border DockPanel.Dock="Top" Padding="20,20,20,10">
+                    <StackPanel>
+                        <TextBlock Text="🏔️ ROCKY" FontSize="28" FontWeight="Bold" 
+                                   Foreground="White" FontFamily="Segoe UI"/>
+                        <TextBlock Text="M U H A S E B E" FontSize="14" FontWeight="Light" 
+                                   Foreground="#5DADE2" Margin="0,-4,0,0" 
+                                   FontFamily="Segoe UI"/>
+                        <Border Height="1" Background="#34495E" Margin="0,15,0,5"/>
+                        <TextBlock Text="{Binding CompanyName}" FontSize="11" 
+                                   Foreground="#7F8C8D" Margin="0,5,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Kullanıcı Bilgisi (Alt) -->
+                <Border DockPanel.Dock="Bottom" Padding="15" Background="#151D25">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="36"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="36" Height="36" CornerRadius="18" 
+                                Background="{StaticResource AccentBrush}">
+                            <TextBlock Text="SY" FontSize="14" FontWeight="Bold" 
+                                       Foreground="White" HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center"/>
+                        </Border>
+                        <StackPanel Grid.Column="1" Margin="10,0,0,0" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding CurrentUser}" FontSize="12" 
+                                       Foreground="White" FontWeight="SemiBold"/>
+                            <TextBlock Text="Sistem Yöneticisi" FontSize="10" 
+                                       Foreground="#7F8C8D"/>
+                        </StackPanel>
+                        <Button Grid.Column="2" Content="⏻" FontSize="16" 
+                                Style="{StaticResource SidebarMenuButton}"
+                                Command="{Binding LogoutCommand}" 
+                                Foreground="#E74C3C" Padding="8,4" Margin="0"
+                                ToolTip="Oturumu Kapat"/>
+                    </Grid>
+                </Border>
+
+                <!-- Navigasyon Menüsü -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="8,5">
+                    <StackPanel>
+                        <!-- GENEL -->
+                        <TextBlock Text="G E N E L" FontSize="10" Foreground="#5D6D7E" 
+                                   FontWeight="Bold" Margin="16,15,0,8"/>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="Dashboard">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="📊" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Dashboard" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- MUHASEBE -->
+                        <TextBlock Text="M U H A S E B E" FontSize="10" Foreground="#5D6D7E" 
+                                   FontWeight="Bold" Margin="16,20,0,8"/>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="HesapPlani">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="📋" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Hesap Planı" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="Yevmiye">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="📝" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Yevmiye Defteri" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="Mizan">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="📈" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Mizan" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- CARİ HESAPLAR -->
+                        <TextBlock Text="C A R İ   H E S A P L A R" FontSize="10" Foreground="#5D6D7E" 
+                                   FontWeight="Bold" Margin="16,20,0,8"/>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="CariHesaplar">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="👥" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Cari Hesaplar" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="Faturalar">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🧾" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Faturalar" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- DEPO & STOK -->
+                        <TextBlock Text="D E P O   &amp;   S T O K" FontSize="10" Foreground="#5D6D7E" 
+                                   FontWeight="Bold" Margin="16,20,0,8"/>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="Urunler">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="📦" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Ürünler" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="StokHareketleri">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🔄" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Stok Hareketleri" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- RAPORLAR -->
+                        <TextBlock Text="R A P O R L A R" FontSize="10" Foreground="#5D6D7E" 
+                                   FontWeight="Bold" Margin="16,20,0,8"/>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="Raporlar">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="📑" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Raporlar" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- SİSTEM -->
+                        <TextBlock Text="S İ S T E M" FontSize="10" Foreground="#5D6D7E" 
+                                   FontWeight="Bold" Margin="16,20,0,8"/>
+
+                        <Button Style="{StaticResource SidebarMenuButton}" 
+                                Command="{Binding NavigateCommand}" CommandParameter="Ayarlar">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="⚙️" FontSize="16" Margin="0,0,12,0"/>
+                                <TextBlock Text="Ayarlar" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </ScrollViewer>
+            </DockPanel>
+        </Border>
+
+        <!-- ========== ANA İÇERİK ALANI ========== -->
+        <DockPanel Grid.Column="1">
+
+            <!-- Üst Çubuk (Header Bar) -->
+            <Border DockPanel.Dock="Top" Background="White" Height="60" Padding="20,0"
+                    BorderBrush="{StaticResource BorderLightBrush}" BorderThickness="0,0,0,1">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="1" BlurRadius="4" Opacity="0.05" Color="Black"/>
+                </Border.Effect>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Sayfa Başlığı -->
+                    <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding CurrentPageTitle}" FontSize="20" 
+                                   FontWeight="Bold" Foreground="{StaticResource TextPrimaryBrush}"
+                                   FontFamily="Segoe UI" VerticalAlignment="Center"/>
+                        <TextBlock Text=" — " Foreground="{StaticResource TextLightBrush}" 
+                                   VerticalAlignment="Center" Margin="4,0"/>
+                        <TextBlock Text="{Binding CurrentDate}" FontSize="12" 
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <!-- Sağ Araç Çubuğu -->
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" 
+                                VerticalAlignment="Center" Margin="0,0,0,0">
+                        <!-- Arama -->
+                        <Border CornerRadius="20" Background="#F5F6FA" Width="220" Height="36" 
+                                Padding="12,0" Margin="0,0,15,0">
+                            <Grid>
+                                <TextBlock Text="🔍 Ara..." Foreground="#BDC3C7" 
+                                           VerticalAlignment="Center" FontSize="12"/>
+                            </Grid>
+                        </Border>
+
+                        <!-- Bildirimler -->
+                        <Button Style="{StaticResource SecondaryButton}" Padding="8,4" 
+                                Margin="0" BorderThickness="0" ToolTip="Bildirimler">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🔔" FontSize="18"/>
+                                <Border Background="{StaticResource DangerBrush}" CornerRadius="8" 
+                                        MinWidth="16" Height="16" Margin="-6,-8,0,0" Padding="4,0">
+                                    <TextBlock Text="3" Foreground="White" FontSize="9" 
+                                               FontWeight="Bold" HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center"/>
+                                </Border>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- Alt Durum Çubuğu -->
+            <Border DockPanel.Dock="Bottom" Background="{StaticResource PrimaryBrush}" 
+                    Height="28" Padding="15,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="✅ Sistem hazır" Foreground="#BDC3C7" 
+                               FontSize="11" VerticalAlignment="Center"/>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="Rocky Muhasebe v1.0.0" Foreground="#7F8C8D" 
+                                   FontSize="10" Margin="20,0,0,0"/>
+                        <TextBlock Text=" | " Foreground="#34495E" FontSize="10"/>
+                        <TextBlock Text="SQL Server: Bağlı ✅" Foreground="#27AE60" 
+                                   FontSize="10"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- İçerik Alanı (ContentPresenter) -->
+            <ContentControl Content="{Binding CurrentView}" Margin="0"/>
+
+        </DockPanel>
+    </Grid>
+</Window>

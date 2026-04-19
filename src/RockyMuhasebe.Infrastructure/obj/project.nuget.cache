@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "XyfwZxTFaUk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tasgu\\Desktop\\Rocky Muhasebe\\src\\RockyMuhasebe.Infrastructure\\RockyMuhasebe.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tasgu\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.6\\microsoft.extensions.caching.abstractions.10.0.6.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.6\\microsoft.extensions.caching.memory.10.0.6.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.6\\microsoft.extensions.dependencyinjection.abstractions.10.0.6.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.6\\microsoft.extensions.logging.abstractions.10.0.6.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\microsoft.extensions.options\\10.0.6\\microsoft.extensions.options.10.0.6.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.6\\microsoft.extensions.primitives.10.0.6.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\tasgu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.6\\system.diagnostics.diagnosticsource.10.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
