@@ -47,7 +47,7 @@ RockyMuhasebe/
 ### 1. Projeyi Klonlayın
 
 ```bash
-git clone https://github.com/kullaniciadi/RockyMuhasebe.git
+git clone https://github.com/rootforall/Rocky-Muhasebe.git
 cd RockyMuhasebe
 ```
 
@@ -103,9 +103,8 @@ Bu proje [MIT](LICENSE) lisansı altında lisanslanmıştır.
 
 ## 📞 İletişim
 
-- **Proje Sahibi**: RockyMuhasebe Ekibi
-- **E-posta**: info@rockymuhasebe.com
-- **Website**: www.rockymuhasebe.com
+- **Proje Sahibi**: Rocky Systems Ekibi
+- **Website**: www.rockysystems.com.tr
 
 ## 🙏 Teşekkürler
 
